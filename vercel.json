@@ -5,8 +5,10 @@
         "src": "index.ts",
         "use": "@vercel/node"
       }
-    ],  
+    ],
     "routes": [
       { "src": "/api/(.*)", "dest": "index.ts" }
-    ]
+    ],
+    "installCommand": "npm install && npm run prisma:generate"
   }
+  
